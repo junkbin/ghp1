@@ -1,0 +1,22 @@
+.grid-container div {
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+}
+
+.grid-container div:nth-child(even){
+    background: tomato;
+}
+
+.grid-container div:nth-child(odd){
+    background: #dac;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
