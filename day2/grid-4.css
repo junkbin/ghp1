@@ -1,0 +1,44 @@
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container div {
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+}
+
+.grid-container-main div:nth-child(even){
+    background: tomato;
+}
+
+.grid-container-main div:nth-child(odd){
+    background: royalblue;
+}
+
+.grid-container-main div:nth-last-child(4n+1){
+    background: green;
+}
+
+.grid-container-main div {
+    border-radius: 5px;
+    color : white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.grid-container{
+    display: grid;
+    
+    grid-template-columns: 70vw;
+    justify-content: center;
+}
+
+.grid-container-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 100px;
+}
