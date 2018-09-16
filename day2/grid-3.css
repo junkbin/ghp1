@@ -1,0 +1,29 @@
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container div {
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+}
+
+.grid-container div:nth-child(even){
+    background: tomato;
+}
+
+.grid-container div:nth-child(odd){
+    background: #dac;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    
+    grid-template-columns: 70vw;
+    justify-content: center;
+    align-content: center;
+}
