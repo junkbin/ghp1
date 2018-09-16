@@ -19,14 +19,11 @@
     background: royalblue;
 }
 
-.grid-container-main div:nth-last-child(4n+1){
-    background: green;
-}
 
 .grid-container-main div {
     border-radius: 5px;
     color : white;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
 }
 
@@ -40,5 +37,31 @@
 .grid-container-main{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 150px;
+}
+
+@media screen and (max-width:800px){
+    .grid-container{
+        grid-template-columns: 100vw;
+    }
+
+    .grid-container-main{
+        grid-template-columns: auto auto;
+    }
+
+    .grid-container-main div:nth-child(3n+1){
+        background: green;
+    }
+    
+}
+
+
+@media screen and (max-width:600px){
+    .grid-container{
+        grid-template-columns: 100vw;
+    }
+
+    .grid-container-main{
+        grid-template-columns: auto ;
+    }
 }
